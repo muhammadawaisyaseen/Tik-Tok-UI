@@ -27,42 +27,49 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: pages[curInd],
-      bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.red,
-          onTap: (value) {
-            setState(() {
-              curInd = value;
-            });
-          },
-          currentIndex: curInd,
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home, color: Colors.black), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search,
-                  color: Colors.black,
-                ),
-                label: 'Search'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.add,
-                  color: Colors.black,
-                ),
-                label: 'Add'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.message,
-                  color: Colors.black,
-                ),
-                label: 'Inbox'),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: Colors.black,
-                ),
-                label: 'Profile'),
-          ]),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(25),
+          child: BottomNavigationBar(
+
+              // fixedColor: Colors.amber,
+              selectedItemColor: Colors.red,
+              onTap: (value) {
+                setState(() {
+                  curInd = value;
+                });
+              },
+              currentIndex: curInd,
+              items: const [
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.home,
+                    ),
+                    label: 'Home'),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.search,
+                    ),
+                    label: 'Search'),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.add,
+                    ),
+                    label: 'Add'),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.message,
+                    ),
+                    label: 'Inbox'),
+                BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.person,
+                    ),
+                    label: 'Profile'),
+              ]),
+        ),
+      ),
     );
   }
 }
