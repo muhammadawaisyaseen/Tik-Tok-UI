@@ -81,7 +81,7 @@ class ProfilePage extends StatelessWidget {
                   child: Column(
                     children: const [
                       Text(
-                        '190',
+                        '6571',
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
