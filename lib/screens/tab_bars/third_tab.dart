@@ -16,7 +16,7 @@ class ThirdTab extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.all(2),
           child: Container(
-            color: Colors.pink,
+            color: Colors.pink[100],
           ),
         );
       },
