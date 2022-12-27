@@ -18,7 +18,7 @@ class Post1 extends StatelessWidget {
         videoDesc: ' Yaraa_nal_bharaa',
         noOfshares: '869271',
         userPost: Container(
-            // color: Color.fromARGB(255, 113, 83, 93),
-            ));
+          color: Colors.blue[300],
+        ));
   }
 }

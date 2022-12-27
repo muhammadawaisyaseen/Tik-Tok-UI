@@ -76,7 +76,7 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                //follower
+                //followers
                 Expanded(
                   child: Column(
                     children: const [
