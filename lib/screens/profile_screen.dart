@@ -55,7 +55,6 @@ class ProfilePage extends StatelessWidget {
             ),
             Row(
               children: [
-                //following
                 Expanded(
                   child: Column(
                     children: const [
